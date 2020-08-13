@@ -17,7 +17,7 @@ const LogoContainer = styled.div`
       width: 0;
     }
     to {
-      width: 157px;
+      width: 159px;
     }
   }
   @keyframes blinkTextCursor {
