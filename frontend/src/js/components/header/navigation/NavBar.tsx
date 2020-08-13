@@ -10,6 +10,7 @@ const NavBarContainer = styled.div`
   padding: 3rem 8rem 0;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 `
 
 //React Component
