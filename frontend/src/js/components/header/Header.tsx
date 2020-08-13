@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import NavBar from './navigation/NavBar'
+import BannerImage from './banner/BannerImage'
+import BannerText from './banner/BannerText'
 
 //Styled Components
 const HeaderWraper = styled.div`
@@ -17,6 +19,8 @@ const Header: React.FC = () => {
   return (
     <HeaderWraper>
       <NavBar />
+      <BannerImage />
+      <BannerText />
     </HeaderWraper>
   )
 }
