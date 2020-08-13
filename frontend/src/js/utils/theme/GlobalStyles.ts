@@ -14,7 +14,6 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 16px;
         box-sizing: border-box;
-        overflow:hidden;
         font-family: FiraCode;
     }
 
