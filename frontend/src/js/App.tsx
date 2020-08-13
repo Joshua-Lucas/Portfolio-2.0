@@ -5,6 +5,7 @@ import Theme from './utils/theme/Theme'
 import GlobalStyle from './utils/theme/GlobalStyles'
 
 import Header from './components/header/Header'
+import Main from './components/body/Main'
 
 function App() {
   return (
@@ -13,9 +14,7 @@ function App() {
         <Switch>
           <Route path="/">
             <Header />
-            <div>
-              <h1>Hello World</h1>
-            </div>
+            <Main />
             <GlobalStyle />
           </Route>
         </Switch>
