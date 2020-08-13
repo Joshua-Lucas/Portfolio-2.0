@@ -4,7 +4,7 @@ import styled from 'styled-components'
 //Styled Components
 const LogoWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 2.5rem;
 `
 const LogoSpan = styled.span`
@@ -28,8 +28,7 @@ const LogoContainer = styled.div`
       border-right-color: transparent;
     }
   }
-  position: relative;
-  top: 50%;
+
   border-right: 8px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
@@ -43,7 +42,7 @@ const LogoText = styled.h1`
 `
 
 //React Component
-const Logo: React.FC = ({}) => {
+const Logo: React.FC = () => {
   return (
     <LogoWrapper>
       <LogoSpan>&gt; </LogoSpan>

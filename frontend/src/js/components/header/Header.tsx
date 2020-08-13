@@ -13,7 +13,7 @@ const HeaderWraper = styled.div`
 `
 
 //React Component
-const Header: React.FC = ({}) => {
+const Header: React.FC = () => {
   return (
     <HeaderWraper>
       <NavBar />
