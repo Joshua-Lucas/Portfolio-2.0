@@ -1,19 +1,20 @@
+import Colors from './Colors'
 export const Theme = {
   /*-- COLORS --*/
 
   // Brand Colors
-  primaryColor: '',
-  secondaryColor: '',
-  tirtiaryColor: '',
-  lightNeutralColor: '',
-  darkNeutralColor: '',
+  primaryColor: Colors.dark.primary,
+  secondaryColor: Colors.dark.accent,
+  tirtiaryColor: Colors.accent,
+  lightNeutralColor: Colors.light,
+  darkNeutralColor: Colors.dark.primary,
   // Text Color
 
-  primaryTextColor: '',
-  secondarydTextColor: '',
+  primaryTextColor: Colors.light,
+  secondarydTextColor: Colors.accent,
 
   // Button Colors
-  primaryHoverColor: '',
+  primaryHoverColor: Colors.accent,
   secondaryHoverColor: '#fff',
 }
 
