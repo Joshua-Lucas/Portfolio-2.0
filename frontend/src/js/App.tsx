@@ -4,12 +4,15 @@ import { ThemeProvider } from 'styled-components'
 import Theme from './utils/theme/Theme'
 import GlobalStyle from './utils/theme/GlobalStyles'
 
+import Header from './components/header/Header'
+
 function App() {
   return (
     <ThemeProvider theme={Theme}>
       <Router>
         <Switch>
           <Route path="/">
+            <Header />
             <div>
               <h1>Hello World</h1>
             </div>
