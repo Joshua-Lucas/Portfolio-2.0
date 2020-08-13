@@ -1,15 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 import { normalize } from 'polished'
+import FiraCode from '../../../fonts/FiraCode-Regular.ttf'
 import Colors from './Colors'
 
 const GlobalStyle = createGlobalStyle`
     ${normalize()}
 
+    @font-face {
+        font-family: 'FiraCode';
+        src: url(${FiraCode});
+    }
 
     html {
         font-size: 16px;
-        box-sizing: border-box;    
-        
+        box-sizing: border-box;
+        overflow:hidden;
+        font-family: FiraCode;
     }
 
     * , *:before, *:after {
@@ -20,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         background-color: ${Colors.dark.primary};
         color: ${Colors.light};
+        
     }
 
     h1 {
