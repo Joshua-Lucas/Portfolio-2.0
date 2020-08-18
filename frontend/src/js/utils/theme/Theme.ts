@@ -12,6 +12,7 @@ export const Theme = {
 
   primaryTextColor: Colors.light,
   secondarydTextColor: Colors.accent,
+  lightTextColor: Colors.lightSecond,
 
   // Button Colors
   primaryHoverColor: Colors.accent,
