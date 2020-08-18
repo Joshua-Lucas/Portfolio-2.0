@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import DetailsContainer from './Details/DetailsContainer'
+import TextContainer from './Text/TextContainer'
 
 //Styled Components
 const IntroWrapper = styled.div`
@@ -8,6 +10,7 @@ const IntroWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 20% 80%;
+  grid-column-gap: 6.5rem;
 `
 const NumberContiner = styled.div`
   position: relative;
@@ -17,19 +20,22 @@ const NumberContiner = styled.div`
 
 const IntroNumber = styled.h1`
   position: absolute;
-  right: 50px;
+  right: -50px;
   bottom: -75px;
   margin: 0;
   font-size: 21rem;
+  font-weight: 300;
 `
 
 //React Component
 const Introduction: React.FC = () => {
   return (
-    <IntroWrapper id="01 Introduction">
+    <IntroWrapper id="01%Introduction">
       <NumberContiner>
         <IntroNumber>01</IntroNumber>
       </NumberContiner>
+      <DetailsContainer />
+      <TextContainer />
     </IntroWrapper>
   )
 }
