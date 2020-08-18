@@ -30,23 +30,28 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-size: 1.8rem;
+        margin: 0;
         
     }
 
     h2 {
         font-size: 1.6rem;
+        margin: 0;
     }
 
     h3 {
-        font-size: 1.4rem
+        font-size: 1.4rem;
+        margin: 0;
     }
 
     h4 {
-        font-size: 1.2rem
+        font-size: 1.2rem;
+        margin: 0;
     }
 
     h5 {
-        font-size: 1.1rem
+        font-size: 1.1rem;
+        margin: 0;
     }
 
 
