@@ -16,14 +16,16 @@ const NumberContiner = styled.div`
   position: relative;
   grid-column: 2/3;
   grid-row: 1/2;
+  overflow-x: clip;
 `
 
 const IntroNumber = styled.h1`
   position: absolute;
   right: -50px;
-  bottom: -75px;
+  bottom: -145px;
   margin: 0;
-  font-size: 21rem;
+  font-size: 25rem;
+
   font-weight: 300;
 `
 
