@@ -16,12 +16,14 @@ const SectionHeader = styled.h1`
 `
 
 const Title = styled.h1`
-  padding-bottom: 2.3rem;
+  padding-bottom: 2rem;
   font-size: 3.75rem;
 `
 
 const SubTitle = styled.h2`
   padding-bottom: 2rem;
+  /* color: ${(props) => props.theme.lightTextColor}; */
+  font-size: 1rem;
   line-height: 1.6;
   font-style: italic;
   font-weight: 300;
@@ -32,14 +34,18 @@ const ListContainer = styled.div`
   flex-wrap: wrap;
   padding: 1rem 0 2rem;
 `
-
+const ListSectionTitle = styled.h4`
+  font-size: 0.8rem;
+  color: ${(props) => props.theme.lightTextColor};
+`
 const ListItem = styled.p`
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 0.5rem 1rem;
+
   text-align: center;
   border-radius: ${UtilityStyles.borderRadius.lg};
   background-color: ${(props) => props.theme.secondaryColor};
-  font-size: 14px;
+  font-size: 12px;
 `
 
 //Interfaces
@@ -66,7 +72,7 @@ const TextDetails: React.FC<ITextDetails> = ({
       <SectionHeader>Introduction</SectionHeader>
       <Title>{title}</Title>
       <SubTitle>{subtitle}</SubTitle>
-      <h4>{sectionTitleOne}</h4>
+      <ListSectionTitle>{sectionTitleOne}</ListSectionTitle>
       <ListContainer role="list">
         {sectionItemsOne.map((item: string) => (
           <ListItem key={item} role="listitem">
@@ -75,7 +81,7 @@ const TextDetails: React.FC<ITextDetails> = ({
         ))}
       </ListContainer>
 
-      <h4>{sectionTitleTwo}</h4>
+      <ListSectionTitle>{sectionTitleTwo}</ListSectionTitle>
       <ListContainer>
         {sectionItemsTwo.map((item: string) => (
           <ListItem key={item} role="listitem">
