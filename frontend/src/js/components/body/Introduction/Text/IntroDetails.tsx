@@ -21,6 +21,7 @@ const Title = styled.h1`
 
 const SubTitle = styled.h2`
   padding-bottom: 2rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   font-style: italic;
   font-weight: 300;
@@ -30,7 +31,7 @@ const IntroText = styled.p`
   margin: 0;
   color: ${(props) => props.theme.lightTextColor};
   line-height: 1.6;
-  font-size: 1.3rem;
+  font-size: 1rem;
 `
 
 //React Component
