@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import IntroDetails from './IntroDetails'
 import TextDetails from './TextDetails'
-
+// Static Data
 import {
   Frontend,
   Backend,
@@ -11,7 +11,7 @@ import {
 
 //Styled Components
 const TextWrapper = styled.div`
-  padding-right: 100px;
+  padding-right: 14rem;
   grid-column: 2/3;
   grid-row: 2/3;
 `
