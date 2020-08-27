@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import DetailsContainer from './Details/DetailsContainer'
 import TextContainer from './Text/TextContainer'
@@ -22,22 +22,33 @@ const NumberContiner = styled.div`
 const IntroNumber = styled.h1`
   position: absolute;
   right: -50px;
-  bottom: -145px;
+  bottom: -125px;
   margin: 0;
   font-size: 25rem;
-
   font-weight: 300;
+  cursor: pointer;
 `
 
 //React Component
 const Introduction: React.FC = () => {
+  const [skillsCategorey, setSkillsCategorey] = useState('Intro')
+
+  const toggleSkillsCategorey = (
+    Event: React.MouseEvent<HTMLButtonElement>
+  ) => {
+    Event.preventDefault()
+    setSkillsCategorey(Event.currentTarget.id)
+  }
+
   return (
-    <IntroWrapper id="01%Introduction">
+    <IntroWrapper id="01 Introduction">
       <NumberContiner>
-        <IntroNumber>01</IntroNumber>
+        <IntroNumber onClick={() => setSkillsCategorey('Intro')}>
+          01
+        </IntroNumber>
       </NumberContiner>
-      <DetailsContainer />
-      <TextContainer />
+      <DetailsContainer toggleFunc={toggleSkillsCategorey} />
+      <TextContainer section={skillsCategorey} />
     </IntroWrapper>
   )
 }
