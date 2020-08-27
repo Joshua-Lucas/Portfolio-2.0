@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { UtilityStyles } from '@jludev/component-lib-typescript'
+import { gsap } from 'gsap'
 
 //Styled Components
 const TextDetailsWrapper = styled.div`
@@ -16,7 +17,8 @@ const SectionHeader = styled.h1`
 `
 
 const Title = styled.h1`
-  padding-bottom: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 2.3rem;
   font-size: 3.75rem;
 `
 
@@ -67,6 +69,27 @@ const TextDetails: React.FC<ITextDetails> = ({
   sectionTitleTwo,
   sectionItemsTwo,
 }) => {
+  let sectionText = useRef<HTMLDivElement>(null)
+
+  // useEffect(() => {
+  //   //transiton one out and the other in
+  //   gsap.from(sectionText.current, {
+  //     duration: 1,
+  //     x: -100,
+  //     opacity: 0,
+  //     ease: 'power4.in',
+  //   })
+  // }, [])
+
+  const transform = () => {
+    gsap.from(sectionText.current, {
+      duration: 1,
+      x: -100,
+      opacity: 0,
+      ease: 'power4.in',
+    })
+  }
+
   return (
     <TextDetailsWrapper>
       <SectionHeader>Introduction</SectionHeader>
