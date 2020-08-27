@@ -15,6 +15,7 @@ const SectionHeader = styled.h1`
 `
 
 const Title = styled.h1`
+  padding-top: 0.75rem;
   padding-bottom: 2.3rem;
   font-size: 3.75rem;
 `
