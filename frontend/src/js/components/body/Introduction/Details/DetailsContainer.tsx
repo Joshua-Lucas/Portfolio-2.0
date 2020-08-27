@@ -17,9 +17,12 @@ const DetailsWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `
+interface IDetailsContainer {
+  toggleFunc: React.MouseEventHandler<HTMLButtonElement>
+}
 
 //React Component
-const DetailsContainer: React.FC = () => {
+const DetailsContainer: React.FC<IDetailsContainer> = ({ toggleFunc }) => {
   const data = [Frontend, Backend, EssentailSkills]
 
   const Buttons: any = data.map((object) => (
@@ -28,6 +31,7 @@ const DetailsContainer: React.FC = () => {
       title={object.title}
       subtitle={object.definition}
       accomplishments={object.accomplished}
+      toggle={toggleFunc}
     />
   ))
   return <DetailsWrapper>{Buttons}</DetailsWrapper>
