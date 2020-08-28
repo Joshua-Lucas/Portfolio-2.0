@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { UtilityStyles } from '@jludev/component-lib-typescript'
-import { gsap } from 'gsap'
 
 //Styled Components
 const TextDetailsWrapper = styled.div`
@@ -70,25 +69,6 @@ const TextDetails: React.FC<ITextDetails> = ({
   sectionItemsTwo,
 }) => {
   let sectionText = useRef<HTMLDivElement>(null)
-
-  // useEffect(() => {
-  //   //transiton one out and the other in
-  //   gsap.from(sectionText.current, {
-  //     duration: 1,
-  //     x: -100,
-  //     opacity: 0,
-  //     ease: 'power4.in',
-  //   })
-  // }, [])
-
-  const transform = () => {
-    gsap.from(sectionText.current, {
-      duration: 1,
-      x: -100,
-      opacity: 0,
-      ease: 'power4.in',
-    })
-  }
 
   return (
     <TextDetailsWrapper>

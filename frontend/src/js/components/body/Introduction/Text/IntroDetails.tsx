@@ -34,7 +34,7 @@ const IntroText = styled.p`
   line-height: 1.6;
   font-size: 1rem;
 `
-
+type Ref = HTMLDivElement
 //React Component
 const IntroDetails: React.FC = () => {
   return (

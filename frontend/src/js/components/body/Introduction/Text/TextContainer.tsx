@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import IntroDetails from './IntroDetails'
 import TextDetails from './TextDetails'
+
 // Static Data
 import {
   Frontend,
@@ -21,18 +22,6 @@ interface ITextContainer {
 
 //React Component
 const TextContainer: React.FC<ITextContainer> = ({ section }) => {
-  // let introText = useRef<React.FC>(null)
-
-  // useEffect(()=> {
-  //transiton one out and the other in
-  /*gsap.to(introText.current, {
-          duration: 2,
-          opacity: 0,
-          ease: "power1.out"
-        }) */
-  //intro needs to go out as new one comes in need to cover up render skip.
-  // })
-
   const setSection = () => {
     if (section == 'Frontend') {
       return Frontend
